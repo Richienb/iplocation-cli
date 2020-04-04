@@ -1,20 +1,9 @@
-# iplocation-cli [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/iplocation-cli/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/iplocation-cli)
+const test = require("ava")
+const execa = require("execa")
 
-Get ip location information.
-
-[![NPM Badge](https://nodei.co/npm/iplocation-cli.png)](https://npmjs.com/package/iplocation-cli)
-
-## Install
-
-```sh
-npm install --global iplocation-cli
-```
-
-## Usage
-
-```sh
-$ iplocation 172.217.167.78
-172.217.167.78
+test("main", async t => {
+	const { stdout } = await execa("./cli.js", ["172.217.167.78"])
+	t.is(stdout, `172.217.167.78
 ├─ Latitude: -33.8591
 ├─ Longitude: 151.2002
 ├─ Region
@@ -41,8 +30,5 @@ $ iplocation 172.217.167.78
 └─ Continent
    ├─ Code: OC
    └─ In eu: false
-```
-
-## Related
-
-- [iplocation](https://github.com/Richienb/iplocation) - API for this module.
+`)
+})

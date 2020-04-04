@@ -1,38 +1,52 @@
 {
-    "name": "iplocation-cli",
-    "version": "2.0.0",
-    "description": "get ip location information",
-    "bin": {
-        "iplocation": "index.js"
-    },
-    "scripts": {
-        "test": "eslint ."
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/roryrjb/iplocation-cli"
-    },
-    "keywords": [
-        "ip",
-        "location",
-        "ip-location",
-        "geolocation"
-    ],
-    "author": "Rory Bradford <roryrjb@gmail.com> (https://roryrjb.com)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/roryrjb/iplocation-cli/issues"
-    },
-    "homepage": "https://github.com/roryrjb/iplocation-cli",
-    "dependencies": {
-        "cconsole": "=4.0.0",
-        "iplocation": "=6.0.2",
-        "minimist": "=1.2.0"
-    },
-    "engines": {
-        "node": ">=4.0.0"
-    },
-    "devDependencies": {
-        "eslint": "=5.7.0"
-    }
+	"name": "iplocation-cli",
+	"version": "0.0.0",
+	"description": "Get ip location information.",
+	"repository": "https://github.com/Richienb/iplocation-cli.git",
+	"author": "Richie Bendall <richiebendall@gmail.com>",
+	"license": "MIT",
+	"bin": {
+		"iplocation": "cli.js"
+	},
+	"files": [
+		"cli.js"
+	],
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"lint": "xo",
+		"test": "yarn lint && ava"
+	},
+	"keywords": [
+		"location",
+		"cli",
+		"coordinates",
+		"find",
+		"country",
+		"area",
+		"info"
+	],
+	"dependencies": {
+		"chalk": "^4.0.0",
+		"iplocation": "^7.0.0",
+		"is-ip": "^3.1.0",
+		"meow": "^6.1.0",
+		"p-map": "^4.0.0",
+		"public-ip": "^4.0.1",
+		"sentencecase-keys": "^1.0.0",
+		"treeify": "^1.1.0"
+	},
+	"devDependencies": {
+		"ava": "^3.5.2",
+		"eslint-config-richienb": "^0.4.2",
+		"execa": "^4.0.0",
+		"xo": "^0.28.1"
+	},
+	"resolutions": {
+		"eslint": "^6.8.0"
+	},
+	"xo": {
+		"extends": "richienb"
+	}
 }
