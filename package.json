@@ -1,0 +1,38 @@
+{
+    "name": "iplocation-cli",
+    "version": "2.0.0",
+    "description": "get ip location information",
+    "bin": {
+        "iplocation": "index.js"
+    },
+    "scripts": {
+        "test": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/roryrjb/iplocation-cli"
+    },
+    "keywords": [
+        "ip",
+        "location",
+        "ip-location",
+        "geolocation"
+    ],
+    "author": "Rory Bradford <roryrjb@gmail.com> (https://roryrjb.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/roryrjb/iplocation-cli/issues"
+    },
+    "homepage": "https://github.com/roryrjb/iplocation-cli",
+    "dependencies": {
+        "cconsole": "=4.0.0",
+        "iplocation": "=6.0.2",
+        "minimist": "=1.2.0"
+    },
+    "engines": {
+        "node": ">=4.0.0"
+    },
+    "devDependencies": {
+        "eslint": "=5.7.0"
+    }
+}
