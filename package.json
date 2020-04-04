@@ -1,6 +1,6 @@
 {
 	"name": "iplocation-cli",
-	"version": "0.0.0",
+	"version": "3.0.0",
 	"description": "Get ip location information.",
 	"repository": "https://github.com/Richienb/iplocation-cli.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
