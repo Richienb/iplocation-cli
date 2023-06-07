@@ -42,8 +42,9 @@ const cli = meow(`
       │  └─ Languages
       │     └─ 0: en-AU
       └─ Continent
-         ├─ Code: OC
-         └─ In eu: false
+      │  ├─ Code: OC
+      │  └─ In eu: false
+      └─ Map: https://www.google.com/maps/@-33.8591,151.2002,15z
 `);
 
 module.exports = (async () => {
